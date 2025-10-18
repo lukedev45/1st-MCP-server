@@ -1,0 +1,24 @@
+{
+	"servers": {
+		"Calculator-STDIO": {
+			"command": "/home/luke/Desktop/fastMCP/.venv/bin/python3",
+			"args": [
+				"calculator/fastmcp_calculator.py"
+			],
+			"type": "stdio"
+		},
+		"Calculator-HTTP": {
+			"url": "http://localhost:8002/mcp",
+			"type": "http"
+		},
+
+		"FeedReader-STDIO": {
+			"command": "/home/luke/Desktop/fastMCP/.venv/bin/python3",
+			"args": [
+				"RSS/feed_mcp.py"
+			],
+			"type": "stdio"
+		},
+	},
+	"inputs": []
+}
