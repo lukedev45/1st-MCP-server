@@ -54,5 +54,12 @@ def divide(a: float, b: float) -> float:
         raise ValueError("Can not divide by zero.")
     return a/b
 
+# To run with STDIO interface (default)
+
+# if __name__ == "__main__":
+#     mcp.run() #STDIO by default
+
+# To run with HTTP interface
+
 if __name__ == "__main__":
-    mcp.run() #STDIO by default
+    mcp.run(transport="http", host="localhost", port=8002)
