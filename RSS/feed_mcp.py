@@ -41,4 +41,4 @@ def qiskit_youtube_rss_feed(query: str, max_results: int = 5):
     return results or [{"message": "No results found."}]
 
 if __name__ == "__main__":
-    mcp.run()  # STDIO by default
+    mcp.run(transport="http")  # STDIO by default
